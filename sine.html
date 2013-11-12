@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="flocking/dist/flocking-all.js"></script>
+    </head>
+
+    <body>
+    <h1>Testing Flocking</h1>
+
+    <canvas id="scope" width="600" height="200"></canvas>
+        
+    <script>
+        var synth = flock.synth({
+            synthDef: {
+                ugen: "flock.ugen.sin",
+                freq: 220,
+                mul: 0.25
+            }
+        });
+        synth.play();
+    </script>
+</html>
+

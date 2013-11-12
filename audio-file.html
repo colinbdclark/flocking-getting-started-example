@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="flocking/dist/flocking-all.js"></script>
+    </head>
+
+    <body>
+    <h1>Testing Flocking</h1>
+
+    <canvas id="scope" width="600" height="200"></canvas>
+        
+    <script>
+    var synth = flock.synth({
+        synthDef: {
+            ugen: "flock.ugen.scope",
+            options: {
+                canvas: "#scope"
+            },
+            source: {
+                ugen: "flock.ugen.playBuffer",
+                buffer: {
+                    id: "piano", 
+                    url: "audio/fsharp-piano-44100.wav"
+                },
+                loop: 1.0
+            }
+        }
+    });
+    synth.play();
+    </script>
+</html>

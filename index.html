@@ -1,32 +1,16 @@
+<!DOCTYPE html>
 <html>
     <head>
-         <script src="Flocking/dist/flocking-all.js"></script>
+        <meta charset="UTF-8" />
+        <title>Getting Started with Flocking</title>
     </head>
 
     <body>
-    <h1>Testing Flocking</h1>
-
-    <canvas id="scope" width="600" height="200"></canvas>
+        <h1>Super-Simple Flocking Examples</h1>
         
-    <script>
-        var synth = flock.synth({
-            synthDef: {
-                ugen: "flock.ugen.scope",
-                options: {
-                    canvas: "#scope"
-                },
-                source: {
-                    ugen: "flock.ugen.playBuffer",
-                    buffer: {
-                        id: "piano", 
-                        url: "fsharp-piano-44100.wav"
-                    }, 
-                    speed: 1.0,
-                    loop: 1.0
-                }
-            }
-        });
-        synth.play();
-    </script>
+        <ol>
+            <li><a href="sine.html">A sine wave</a></li>
+            <li><a href="audio-file.html">Playing back an audio file</a></li>
+        </ol>
+    </body>
 </html>
-
