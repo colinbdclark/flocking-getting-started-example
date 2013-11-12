@@ -6,8 +6,8 @@ This project is an example of how you might start using Flocking in a web-based 
 Things You'll Need
 ===================
 
- # A web browser
- # [Node.js](http://nodejs.org)
+# A web browser
+# [Node.js](http://nodejs.org)
 
 Preparation
 ===========
